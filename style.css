@@ -1,0 +1,669 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+/* Top Header */
+.top-header {
+  background: #e5e5e5;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.top-header img {
+  height: 50px;
+}
+
+/* Founder Section */
+.founder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #13406a;
+  color: #fff;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+}
+
+.founder-left {
+  margin-right: 20px;
+}
+
+.founder-img {
+  width: 180px;
+  border-radius: 10px;
+}
+
+.founder-right h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.founder-right h3 {
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.about-left {
+  flex: 1;
+  min-width: 280px;
+  max-width: 55%;
+}
+
+.about-left h2 {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.about-left p {
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+/* Core Members */
+.about-right {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.about-right h3 {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.core-members {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.member {
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 200px;
+}
+
+.member img {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.member p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-left, .about-right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .core-members {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+/* What We Do Section */
+.what-we-do {
+  background: #f2f2f2;
+  padding: 50px 30px;
+  border-radius: 12px;
+  margin: 30px 15px;
+}
+
+.what-we-do h2 {
+  text-align: center;
+  color: red;
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.what-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+
+/* Left Side */
+.cbs-division {
+  flex: 1;
+  min-width: 320px;
+  max-width: 45%;
+  position: relative;
+}
+
+.cbs-division::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -70px;
+  width: 2px;
+  height: 100%;
+  background-color: #ccc;
+}
+
+.cbs-division h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.cbs-division ul {
+  list-style: none;
+  line-height: 2;
+  font-size: 16px;
+  text-align: left;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+
+.cbs-division li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.cbs-division li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #333;
+}
+
+/* Right Side */
+.recent-clients {
+  flex: 1;
+  min-width: 320px;
+  max-width: 45%;
+}
+
+.recent-clients h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.client-logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: center;
+  justify-items: center;
+}
+
+.client-logos img {
+  max-height: 60px;
+  max-width: 180px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.client-logos img:hover {
+  transform: scale(1.05);
+}
+
+/* Specific styling for Captain Pure logo */
+.client-logos img[alt="Captain Pure"] {
+  max-height: 200px;
+}
+/* Specific styling for AddGuard logo */
+.client-logos img[alt="AddGuard"] {
+  max-height: 100px;
+}
+
+/* Product Sales Division */
+.product-sales {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.product-sales h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.product-sales p {
+  max-width: 900px;
+  margin: 0 auto 35px;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Logos Grid */
+.sales-logos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: nowrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  transform: scale(0.85);
+  padding: 0 40px;
+}
+
+.sales-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  min-width: 650px;
+  flex: 1;
+  max-width: 350px;
+  text-align: center;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Specific width for Air Purification card (middle card) */
+.sales-card:nth-child(2) {
+  max-width: 280px;
+  min-width: 250px;
+}
+.sales-card:nth-child(3) {
+  max-width: 250px;
+  min-width: 580px;
+}
+
+.sales-card h4 {
+  margin: 0 0 15px 0;
+  font-size: 17px;
+  font-weight: bold;
+  color: #333;
+  flex-shrink: 0;
+}
+
+.sales-card img {
+  max-height: 65px;
+  margin: 5px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Air purification logos styling */
+.sales-card .air-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex: 1;
+  max-height: 120px;
+  overflow: hidden;
+}
+
+.sales-card img:hover {
+  transform: scale(1.05);
+}
+
+/* Specific styling for larger logos */
+.sales-card img[alt="Eureka Forbes"] {
+  max-height: 190px;
+}
+
+.sales-card img[alt="Atovio"] {
+  max-height: 200px;
+}
+.sales-card img[alt="Microtek"]{
+  max-height: 90px;
+}
+
+/* Ensure water treatment logos are aligned side by side */
+.sales-card .water-logos,
+.sales-card .power-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex: 1;
+  max-height: 120px;
+  overflow: hidden;
+}
+/* Innovation Mission Section */
+.innovation-mission {
+  background: #fff;
+  padding: 50px 20px;
+  margin: 30px 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.innovation-mission h2 {
+  text-align: center;
+  color: red;
+  font-size: 32px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.innovation-mission h2 img {
+  height: 50px;
+}
+
+/* Content Layout */
+.innovation-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+/* Left Logos */
+.innovation-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.logo-item {
+  text-align: center;
+}
+
+.logo-item img {
+  max-width: 120px;
+  max-height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Specific styling for HDM Technology logo */
+.logo-item img[alt="HDM Technology"] {
+  max-width: 150px;
+  max-height: 100px;
+}
+/* Specific styling for HDM Technology logo */
+.logo-item img[alt="IPUC GreenAir"] {
+  max-width: 150px;
+  max-height: 100px;
+}
+
+.logo-item p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Right Text */
+.innovation-text {
+  flex: 1;
+  min-width: 300px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Certifications */
+.certifications {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.certifications h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cert-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cert-logos img {
+  max-height: 100px;
+  object-fit: contain;
+}
+/* Our Innovative Products */
+.innovative-products {
+  background: #f6f6f6;
+  padding: 60px 20px;
+  margin: 30px 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.innovative-products h2 {
+  text-align: center;
+  color: red;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.innovative-products h3 {
+  text-align: center;
+  color: #222;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.products-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Product List */
+.products-list {
+  flex: 1;
+  min-width: 300px;
+}
+
+.products-list ol {
+  margin: 0 0 20px 20px;
+  padding: 0;
+}
+
+.products-list li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #222;
+  font-weight: 500;
+}
+
+.products-list p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Product Image */
+.products-image {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  text-align: center;
+}
+
+.products-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.products-image .tagline {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  background: #fff;
+  color: #004080;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  line-height: 1.3;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+.footer {
+  background: #1e3a5f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-images {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-images img {
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-info {
+  flex: 1;
+  text-align: left;
+  min-width: 300px;
+}
+
+.footer-info p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.social-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social-section span {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.social {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.footer .social img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.footer .social img:hover {
+  transform: scale(1.1);
+}
+
+/* Instagram icon specific sizing */
+.footer .social img[alt="Instagram"] {
+  width: 35px;
+  height: 35px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-info {
+    text-align: center;
+  }
+}
+
+/* Footer Links */
+.footer-info a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+  color: #4a90e2;
+}
+
+/* Phone Copy Links */
+.phone-copy {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.phone-copy:hover {
+  color: #4a90e2;
+}
+
+/* Contact Icons */
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: text-top;
+  margin-right: 2px;
+}
